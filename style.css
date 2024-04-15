@@ -497,8 +497,12 @@ body {
     height: 90px;
 }
 
+.map {
+    width: 100%;
+}
+
 .map iframe {
-    max-width: 100%;
+    width: 100%;
     border-radius: 40px;
 }
 
@@ -665,7 +669,6 @@ body {
 
     .header h1 {
         font-size: 20px;
-        width: 90%;
     }
 
     .header .logo {
@@ -691,7 +694,7 @@ body {
     }
 
     .header .main-logo {
-        width: 70%;
+        width: 80%;
     }
 
     .mobil-menu {
