@@ -63,11 +63,11 @@ body {
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .overlay {
-    width: 2000px;
-    height: 2000px;
+    width: 3000px;
+    height: 3000px;
     border-radius: 50%;
     position: fixed;
-    top: -50%;
+    top: -125%;
     right: -50%;
     background-color: #5050f94a;
     z-index: 20;
@@ -653,25 +653,25 @@ text-align: left;
         padding: 0 25px 0 15px;
     }
     .nav-table {
-        gap: 6px;
+        gap: 10px;
     }
     .nav-table .tab {
-        font-size: 10px;
+        font-size: 11px;
     }
     .chart-header .before {
         font-size: 10px;
     }
     .chart-header h6 {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0;
     }
     .chart-header {
-        align-items: baseline;
+        flex-wrap: wrap;
     }
-    .chart-header .before:first-child {
-        margin-right: 10px;
+    .content-container {
+        width: 100%;
     }
-    .chart-header .before::before {
-        left: -11px;
+    canvas {
+        width: 100% !important;
     }
 }
