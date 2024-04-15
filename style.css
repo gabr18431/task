@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -62,16 +63,17 @@ body {
     background-color: #FBFAFF;
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .overlay {
     width: 3000px;
     height: 3000px;
     border-radius: 50%;
     position: fixed;
-    top: -125%;
-    right: -50%;
+    top: -150%;
+    right: -150%;
     background-color: #5050f94a;
     z-index: 20;
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transform: scale(0);
     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -79,6 +81,7 @@ body {
 .show-mobile-menu .overlay {
     transform: scale(1);
 }
+
 .show-mobile-menu .side-bar {
     transform: scale(1);
     right: auto;
@@ -88,6 +91,7 @@ body {
 .show-mobile-menu .bx-x {
     display: inline-block;
 }
+
 .show-mobile-menu .bx-menu {
     display: none;
 }
@@ -146,11 +150,13 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .header h1 {
     font-weight: 700;
     font-size: 27px;
     line-height: 27px;
 }
+
 .control {
     display: flex;
     justify-content: space-between;
@@ -160,12 +166,14 @@ body {
     background-color: white;
     width: 50%;
 }
+
 .control .search {
     width: 290px;
     background: #F3F7FA;
     border-radius: 6px;
     position: relative;
 }
+
 .control .search input {
     display: block;
     width: 100%;
@@ -174,6 +182,7 @@ body {
     outline: 0;
     padding: 4px 8px;
 }
+
 .dropdown-toggle::after {
     position: absolute;
     top: 50%;
@@ -181,6 +190,7 @@ body {
     right: 8px;
     color: #232360 !important;
 }
+
 .control .search i {
     position: absolute;
     top: 50%;
@@ -188,6 +198,7 @@ body {
     right: 5px;
     color: #94A2BC;
 }
+
 .control .search input::placeholder {
     font-size: 14px;
     font-weight: 400;
@@ -195,6 +206,7 @@ body {
     text-align: left;
     color: #23235F;
 }
+
 .right {
     display: flex;
     justify-content: space-between;
@@ -218,6 +230,7 @@ body {
     border-radius: 34px;
     padding: 15px;
 }
+
 /* 
 .card-container {
     height: 450px;
@@ -240,6 +253,7 @@ body {
     height: 60px;
     transition: 0.3s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .delivery-tracking .card-tracking {
     display: flex;
     justify-content: space-between;
@@ -254,6 +268,7 @@ body {
     margin: 0;
     color: #787A8D;
 }
+
 .delivery-tracking .card-tracking span {
     font-size: 9px;
     font-weight: 700;
@@ -261,6 +276,7 @@ body {
     text-align: left;
     color: #9698AB;
 }
+
 .delivery-tracking .card-tracking button {
     background-color: #322FC0;
     height: 20px;
@@ -292,6 +308,7 @@ body {
     top: -15px;
     left: 0;
 }
+
 .prog .prog-track::after {
     content: '';
     background-color: white;
@@ -319,6 +336,7 @@ body {
     line-height: 12px;
     color: white;
 }
+
 .card-data .head {
     font-size: 12px;
     font-weight: 700;
@@ -331,28 +349,34 @@ body {
     align-items: center;
     margin-top: 10px;
 }
+
 .card-bottom .user {
     display: flex;
     gap: 5px;
     align-items: center;
 }
+
 .card-bottom .user img {
     border-radius: 50%;
     object-fit: cover;
 }
+
 .card-bottom .user h6 {
     margin: 0;
     font-size: 12px;
     color: white;
 }
+
 .card-bottom .user p {
     margin: 0;
     font-size: 12px;
     color: white;
 }
+
 .coll {
     position: relative;
 }
+
 .coll .coll-icon {
     position: absolute;
     top: 50%;
@@ -366,6 +390,7 @@ body {
     text-align: center;
     border-radius: 50%;
 }
+
 .coll .coll-btn {
     padding: 3px 10px 3px 15px;
     background-color: white;
@@ -380,15 +405,18 @@ body {
     background: linear-gradient(180deg, #3431D0 0%, #140788 100%);
     height: 165px;
 }
+
 .delivery-tracking .delivery-card.action .card-tracking-btn {
     background-color: white;
     color: #824DEB;
 }
+
 .delivery-tracking .delivery-card.action h6,
-.delivery-tracking .delivery-card.action span{
+.delivery-tracking .delivery-card.action span {
     color: white;
 }
-.delivery-tracking .delivery-card.action .coll-btn{
+
+.delivery-tracking .delivery-card.action .coll-btn {
     color: #E91E63;
 }
 
@@ -397,7 +425,8 @@ body {
     transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: scale(0);
 }
-.delivery-tracking .delivery-card.action .action-card-show  {
+
+.delivery-tracking .delivery-card.action .action-card-show {
     transform: scale(1);
 }
 
@@ -423,13 +452,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .boxes-container .box-content {
     display: flex;
     justify-content: space-between;
     align-items: start;
     border-bottom: 1px solid #E8EDF1;
 }
-.boxes-container .icon-box{
+
+.boxes-container .icon-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -460,12 +491,13 @@ body {
 .boxes-container .box-img {
     text-align: center;
 }
+
 .boxes-container .box-img img {
     max-width: 200px;
     height: 90px;
 }
 
-.map img {
+.map iframe {
     max-width: 100%;
     border-radius: 40px;
 }
@@ -481,7 +513,7 @@ body {
     background-color: white;
     padding: 15px;
     border-radius: 16px;
-    max-width: 800px;
+    flex: 1;
 }
 
 .chart-header {
@@ -490,6 +522,7 @@ body {
     align-items: center;
     margin-bottom: 15px;
 }
+
 .chart-header h6 {
     font-size: 18px;
     font-weight: 700;
@@ -507,6 +540,7 @@ body {
     transform: translateY(-50%);
     border-radius: 50%;
 }
+
 .chart-header .before:first-child {
     margin-right: 20px;
     color: #5051F9;
@@ -514,12 +548,15 @@ body {
     font-weight: 400;
     position: relative;
 }
+
 .chart-header .before:first-child::before {
     background-color: #5051F9;
 }
+
 .chart-header .before:last-child::before {
     background-color: #E91E63;
 }
+
 .chart-header .before:last-child {
     color: #E91E63;
     font-size: 14px;
@@ -544,7 +581,7 @@ body {
     transition: 0.3s;
 }
 
-.nav-table .tab.active ,
+.nav-table .tab.active,
 .nav-table .tab:hover {
     color: #5051F9;
     border-bottom: 2px solid #5051F9;
@@ -566,6 +603,7 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #E8EDF1;
 }
+
 .box-table .logo-table {
     display: flex;
     justify-content: space-between;
@@ -581,7 +619,8 @@ body {
     height: 30px;
     border-radius: 50%;
 }
-.box-table .table-head > p {
+
+.box-table .table-head>p {
     color: #1E1E1E;
     font-size: 18px;
     font-weight: 700;
@@ -591,11 +630,11 @@ body {
 }
 
 .table-body p {
-font-size: 12px;
-font-weight: 700;
-line-height: 18.23px;
-text-align: left;
-margin: 5px 0 ;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18.23px;
+    text-align: left;
+    margin: 5px 0;
 }
 
 .table-body div {
@@ -605,29 +644,34 @@ margin: 5px 0 ;
 }
 
 .table-body div span {
-font-size: 11px;
-font-weight: 400;
-line-height: 18.23px;
-text-align: left;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
     .main-container {
         flex-wrap: wrap;
     }
+
     .footer-content {
         flex-wrap: wrap;
     }
+
     .control {
         display: none;
     }
-    .header h1  {
+
+    .header h1 {
         font-size: 20px;
         width: 90%;
     }
+
     .header .logo {
         display: block;
     }
+
     .side-bar {
         height: 100%;
         position: fixed;
@@ -637,40 +681,52 @@ text-align: left;
         transform-origin: bottom center;
         transform: scale(0);
     }
+
     .boxes-container .box {
-        flex:1 1 100%;
+        flex: 1 1 100%;
     }
+
     .box-table {
         width: 100%;
     }
+
     .header .main-logo {
         width: 70%;
     }
+
     .mobil-menu {
         display: inline-flex;
     }
+
     .header {
         padding: 0 25px 0 15px;
     }
+
     .nav-table {
         gap: 10px;
     }
+
     .nav-table .tab {
         font-size: 11px;
     }
+
     .chart-header .before {
         font-size: 10px;
     }
+
     .chart-header h6 {
         font-size: 16px;
         margin: 0;
     }
+
     .chart-header {
         flex-wrap: wrap;
     }
+
     .content-container {
         width: 100%;
     }
+
     canvas {
         width: 100% !important;
     }
